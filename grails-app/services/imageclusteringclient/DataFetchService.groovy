@@ -14,5 +14,6 @@ class DataFetchService {
         Put put = new Put("1".getBytes())
         put.add(colFam1.getBytes(),"name".getBytes(),"pradip")
         put.add(colFam2.getBytes(),"name".getBytes(),"narayan")
+        table.put(put)
     }
 }
