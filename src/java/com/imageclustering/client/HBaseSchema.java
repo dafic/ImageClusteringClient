@@ -27,6 +27,9 @@ public class HBaseSchema {
 
     public static void createTable() throws IOException {
         Configuration config = GrailsConfiguration.getConfig();
+        if(config == null){
+            System.out.println("config null");
+        }
         HTable table = new HTable(config, Bytes.toBytes("student"));
         String colFam1 = "info";
         String colFam2 = "father";
@@ -55,12 +58,12 @@ public class HBaseSchema {
     }
 
     public static boolean createHBaseTable1() {
-        Configuration conf = HBaseConfiguration.create();
+        Configuration conf = GrailsConfiguration.getConfig();
         String tablename = "abc";
         List<String> colFamily = new ArrayList<String>();
         colFamily.add("Image");
         colFamily.add("info");
-        conf.set("hbase.master", "127.0.0.1:60000");
+        //conf.set("hbase.master", "127.0.0.1:60000");
         try {
             HBaseAdmin hbase = new HBaseAdmin(conf);
             HTableDescriptor desc = new HTableDescriptor(tablename);

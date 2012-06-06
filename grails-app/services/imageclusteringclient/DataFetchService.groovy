@@ -12,11 +12,18 @@ class DataFetchService {
         HBaseSchema.createTable()
     }
     def createImageDatabase(){
-        def tableName="abc";
-        def colFamily=["Image","ImageInfo"];
-//        colFamily.add("Image");
-//        colFamily.add("ImageInfo");
+        //def tableName="abc";
+        //def colFamily=["Image","ImageInfo"];
+        //        colFamily.add("Image");
+        //        colFamily.add("ImageInfo");
         
-        HBaseSchema.createHBaseTable1();
+        def result = HBaseSchema.createHBaseTable1()
+        if(result){
+            render "Table created"
+        }
+        else{
+            render "Table not created"
+
+        }
     }   
 }
