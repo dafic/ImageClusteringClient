@@ -4,7 +4,7 @@ class DataFetchController {
 
     def HBaseTable() { 
         DataFetchService dfs = new DataFetchService()
-        dfs.createImageDatabase()
-        //dfs.createHBaseTable()
+        //dfs.createImageDatabase()
+        dfs.createHBaseTable()
     }
 }
