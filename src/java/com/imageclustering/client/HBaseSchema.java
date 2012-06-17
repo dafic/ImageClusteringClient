@@ -34,8 +34,8 @@ public class HBaseSchema {
         String colFam1 = "info";
         String colFam2 = "father";
         Put put = new Put("1".getBytes());
-        put.add(colFam1.getBytes(), "name".getBytes(), "pradip".getBytes());
-        put.add(colFam2.getBytes(), "name".getBytes(), "narayan".getBytes());
+        put.add(colFam1.getBytes(), "name".getBytes(), "rameshwor".getBytes());
+        put.add(colFam2.getBytes(), "name".getBytes(), "parajuli".getBytes());
         table.put(put);
     }
 
