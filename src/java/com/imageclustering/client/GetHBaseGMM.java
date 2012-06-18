@@ -25,10 +25,10 @@ import org.apache.hadoop.hbase.util.Bytes;
  */
 public class GetHBaseGMM {
 
-    public void getGMM() throws IOException, ClassNotFoundException {
+    public int getGMM() throws IOException, ClassNotFoundException {
         Configuration config = GrailsConfiguration.getConfig();
         HTable table = new HTable(config, "ImageDatabase");
-        Get get = new Get(Bytes.toBytes("bilkes10.jpg"));
+        Get get = new Get(Bytes.toBytes("tmnt_poster.jpg"));
         Result result = table.get(get);
         byte[] val = result.getValue(Bytes.toBytes("Image"), Bytes.toBytes("split0"));
         //if(val == null)
@@ -36,10 +36,13 @@ public class GetHBaseGMM {
         InputStream in = new ByteArrayInputStream(val);
         BufferedImage bif = ImageIO.read(in);
         if(bif == null){
-            System.out.println("buff image null");
+            return 0;
         }
+        else{
 //        BufferedImage bif = (BufferedImage)ObjectToByte.ByteArrayToObject(val);
         ImageIO.write(bif, "jpg", new File(
-                "test_new.jpg"));
+                "tmnt_poster.jpg"));
+        return 1;
+        }
     }
 }
