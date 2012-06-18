@@ -21,7 +21,7 @@ import org.apache.hadoop.hbase.util.Bytes;
 
 /**
  *
- * @author bhanu bhakta
+ * @author bhanu
  */
 public class GetHBaseGMM {
 
