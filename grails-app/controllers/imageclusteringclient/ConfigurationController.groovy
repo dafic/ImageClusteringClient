@@ -8,6 +8,6 @@ class ConfigurationController {
 
     def HBaseConfig(){
         Configuration config = GrailsConfiguration.getConfig()
-        render "hello"
+        render "Configutarion Successful"
     }
 }
