@@ -4,6 +4,7 @@
  */
 package com.imageclustering.client;
 
+import java.awt.Image;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -11,6 +12,7 @@ import java.io.ObjectInput;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutput;
 import java.io.ObjectOutputStream;
+import javax.imageio.ImageIO;
 
 /**
  *
@@ -26,6 +28,7 @@ public class ObjectToByte {
         byte[] outputByteArray = bos.toByteArray();
         out.close();
         bos.close();
+        
         return outputByteArray;
     }
     
