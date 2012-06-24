@@ -49,14 +49,14 @@ grails.project.dependency.resolution = {
         
           runtime(
             [group: 'org.apache.hadoop', name: 'hadoop-core', version: '0.20.2-cdh3u4'],
-            //[group: 'org.apache.hadoop', name: 'hadoop-examples', version: '0.20.2-cdh3u4'],
-            //[group: 'org.apache.hadoop', name: 'hadoop-streaming', version: '0.20.2-cdh3u4'],
-            //[group: 'org.apache.hadoop', name: 'hadoop-tools', version: '0.20.2-cdh3u4'],
-            //[group: 'org.apache.hadoop', name: 'hadoop-mrunit', version: '0.20.2-cdh3u4'],
-            //[group: 'org.apache.hadoop', name: 'hadoop-test', version: '0.90.4-cdh3u3'],
+            [group: 'org.apache.hadoop', name: 'hadoop-examples', version: '0.20.2-cdh3u4'],
+            [group: 'org.apache.hadoop', name: 'hadoop-streaming', version: '0.20.2-cdh3u4'],
+            [group: 'org.apache.hadoop', name: 'hadoop-tools', version: '0.20.2-cdh3u4'],
+            [group: 'org.apache.hadoop', name: 'hadoop-mrunit', version: '0.20.2-cdh3u4'],
+            [group: 'org.apache.hadoop', name: 'hadoop-test', version: '0.90.4-cdh3u3'],
             [group: 'org.apache.hbase', name: 'hbase', version: '0.90.4-cdh3u3'],
             [group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.3.4-cdh3u3']
-            //[group: 'org.elasticsearch', name: 'elasticsearch', version: '0.19.1'],
+            //group: 'org.elasticsearch', name: 'elasticsearch', version: '0.19.1'],
             //logback configuration
             //'ch.qos.logback:logback-core:0.9.17', 'ch.qos.logback:logback-classic:0.9.17','org.slf4j:log4j-over-slf4j:1.5.8'
     )
