@@ -8,7 +8,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Images of Cluster</title>
+    <title>Image Clustering:Distributed Approach</title>
   </head>
   <body>
     <h1>Images of Cluster</h1>
